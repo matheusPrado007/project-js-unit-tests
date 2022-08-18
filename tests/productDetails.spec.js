@@ -43,7 +43,6 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(productDetails().length).toBe(2);
     expect(typeof productDetails()[0] && typeof productDetails()[1]).toBe('object');
     expect(typeof productDetails('a', 'b')[0] !== productDetails('a','b')[1]).toBeTruthy()
-    expect(productDetails()[0].details.productId && productDetails()[1].details.productId).toContain(123);
-    
+    expect(productDetails()[0].details.productId.endsWith('123') && productDetails()[1].details.productId.endsWith('123')).toBeTruthy();
   });
 });
