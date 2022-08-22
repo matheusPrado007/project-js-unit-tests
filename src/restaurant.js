@@ -103,15 +103,11 @@ const createMenu = (myMenu) => {
 
     order: (string) => objetoRetornado.consumption.push(string),
     pay: () => {
-      for (let i in objetoRetornado.fetchMenu().food) {
-        if (objetoRetornado.fetchMenu().food[i] !== undefined) {
+      for (let i = 0; i < objetoRetornado.fetchMenu().food.length; i += 1) {
           soma += objetoRetornado.fetchMenu().food[i];
-        }
       } 
-      for (let i in objetoRetornado.fetchMenu().drink) {
-        if (objetoRetornado.fetchMenu().drink[i] !== undefined) {
+      for (let i = 0; i < objetoRetornado.fetchMenu().drink.length; i += 1) {
           soma += objetoRetornado.fetchMenu().drink[i];
-        }
       } 
       return soma - (soma / 10);
     },
@@ -119,5 +115,5 @@ const createMenu = (myMenu) => {
 };
 
   objetoRetornado = createMenu();
-
+  
 module.exports = createMenu;
