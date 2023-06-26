@@ -16,7 +16,7 @@ Certifique-se de ter o NodeJS instalado em seu sistema antes de começar. Além 
 1. Clone este repositório para o seu ambiente local:
 
    ```shell
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone git@github.com:matheusPrado007/project-js-unit-tests.git
 
 2. Acesse o diretório do projeto:
    ```cd project-js-unit-tests```
